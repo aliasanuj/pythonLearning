@@ -1,7 +1,7 @@
 #any_all.py
 
 ####################################################################
-#any test
+#any
 ####################################################################
 # 1. Returns true if any of the items is True.
 # 2. It returns False if empty or all are false.
