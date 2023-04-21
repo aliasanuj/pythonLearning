@@ -2,5 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../csv" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../mySQlLearning" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../pyTest" vcs="Git" />
   </component>
 </project>

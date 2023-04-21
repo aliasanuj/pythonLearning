@@ -4,6 +4,9 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="pyTest" />
+    <orderEntry type="module" module-name="csv" />
+    <orderEntry type="module" module-name="mySQlLearning" />
   </component>
   <component name="PyDocumentationSettings">
     <option name="format" value="PLAIN" />
