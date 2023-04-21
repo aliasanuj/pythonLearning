@@ -10,7 +10,7 @@ with open(r"C:\Users\write\OneDrive\Desktop\git\s_2023\learn_python\file.txt", "
 
 
 
-
+test
 
 
 
