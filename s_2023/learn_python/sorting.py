@@ -95,22 +95,44 @@
 # print(fact)
 
 '''selection sort'''
-list1 = [10,45,23,75,22,88,12,7]
-for i in range(1,len(list1)):
-    var1 = i
-    while var1>0 and list1[var1] < list1[var1-1]:
-        x = list1[var1]
-        list1[var1] = list1[var1-1]
-        list1[var1-1] = x
-        var1= var1-1
-print(list1)
+# list1 = [10,45,23,75,22,88,12,7]
+# for i in range(1,len(list1)):
+#     var1 = i
+#     while var1>0 and list1[var1] < list1[var1-1]:
+#         x = list1[var1]
+#         list1[var1] = list1[var1-1]
+#         list1[var1-1] = x
+#         var1= var1-1
+# print(list1)
 
+# my_list = [1, 2, 3, 4, 5, "anuj" ,"nnhh" ]
+# my_list.reverse()
+# print(my_list)
 
+# my_list = [1, 2, 3,"pp",4, 5,"aa","ff"]
+# reversed_list = my_list[::-1]
+# print(reversed_list)
 
+# my_list = [1, 2,"rr", 3, 4, 5,"aa"]
+# reversed_list = list(reversed(my_list))
+# print(reversed_list)
 
+'''decorator'''
+# def abc(aa):
+#     def bb():
+#         print("good morning")
+#         aa()
+#         print("thanks for using !!")
+#     return bb
+# @abc
+# def hello():
+#     print("hello world !!")
+# hello()
 
-
-
+'''decorator'''
+# def abc(a,b,c):
+#     return a(b(c))
+# abc(print,len,"kumar anuj")
 
 
 
