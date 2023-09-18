@@ -135,15 +135,74 @@
 # abc(print,len,"kumar anuj")
 
 
+'''closure'''
+# def outer_function(x):
+#     # This is the enclosing function
+#     def inner_function(y):
+#         # This is the nested function
+#         print("x is ",x)
+#         print("y is ",y)
+#         return x + y
+#     return inner_function
+# closure = outer_function(10)
+# print(closure(20))
+# result = closure(5)
+# print(result)
+
+'''args and kwargs'''
+# def abc(a, *b, **c):
+#     print(a)
+#     for i in b:
+#         print(i)
+#     for j in c.values():
+#         print(j)
+# abc("anuj", {'a':10} ,{'b':20},one = "abc", two="def")
 
 
+'''coroutine'''
+# import asyncio
+# async def greet(name):
+#     print(f"Hello, {name}!")
+#     await asyncio.sleep(1)  # Simulate some asynchronous work
+#     print(f"Goodbye, {name}!")
+# async def main():
+#     await greet("Alice")
+#     await greet("Bob")
+# # Create an event loop and run the main coroutine
+# if __name__ == "__main__":
+#     loop = asyncio.get_event_loop()
+#     loop.run_until_complete(main())
+#     loop.close()
+
+'''counter'''
+# from collections import Counter
+#
+# # Create a counter from a list
+# my_list = [1, 2,6,8,4,10,20,76]
+# counter = Counter(my_list)
+# print(counter)
 
 
+'''iterator'''
+# my_list = [4, 7, 0, 3]
+# my_iter = iter(my_list)
+# print(next(my_iter))
+# print(next(my_iter))
+# print(my_iter.__next__())
+# print(my_iter.__next__())
+# print(my_iter.__next__())
+
+'''generator'''
+# def my_generator():
+#     for i in range(4):
+#         print("aa")
+#         yield i
+# for item in my_generator():
+#     print(item)
 
 
+# my_list = ["apple", "banana", "cherry"]
+# for i, j in enumerate(my_list):
+#     print(f"{i}: {j}")
 
-
-
-
-
-
+'''pickling and unpickling'''
