@@ -200,9 +200,66 @@
 # for item in my_generator():
 #     print(item)
 
-
+'''enumerate'''
 # my_list = ["apple", "banana", "cherry"]
 # for i, j in enumerate(my_list):
-#     print(f"{i}: {j}")
+#     print(i,j)
 
 '''pickling and unpickling'''
+
+
+'''filter'''
+# Define a list of numbers
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# Define a function to check if a number is even
+# def is_even(x):
+#     return x % 2 == 0
+# # Use filter to get a new iterable containing even numbers
+# even_numbers = filter(is_even, numbers)
+# # Convert the result to a list (optional)
+# even_numbers_list = list(even_numbers)
+# # Output the result
+# print(even_numbers_list)
+
+
+'''map'''
+# numbers = [1, 2, 3, 4, 5]
+# squared = map(lambda x: x**2, numbers)
+# print(tuple(squared))
+# # squared will be an iterable containing [1, 4, 9, 16, 25]
+
+'''filter'''
+# numbers = [1, 2, 3, 4, 5]
+# even_numbers = filter(lambda x: x % 2 == 0, numbers)
+# # even_numbers will be an iterable containing [2, 4]
+# print(tuple(even_numbers))
+
+'''reduce'''
+# from functools import reduce
+# numbers = [1, 2, 3, 4, 5]
+# product = reduce(lambda x, y: x * y, numbers)
+# print(product)
+
+
+'''threading'''
+import threading
+import time
+def print_numbers():
+    for i in range(1, 6):
+        print(f"Number {i}")
+        time.sleep(1)
+def print_letters():
+    for letter in "abcde":
+        print(f"Letter {letter}")
+        time.sleep(1)
+# Create two threads
+t1 = threading.Thread(target=print_numbers)
+t2 = threading.Thread(target=print_letters)
+# Start the threads
+t1.start()
+t2.start()
+# Wait for both threads to finish
+# t1.join()
+# t2.join()
+print("Both threads have finished.")
+
